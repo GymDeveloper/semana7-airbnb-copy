@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WhishListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WhishListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,6 +23,10 @@ class WhishListViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+}
+
+extension WhishListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return places.count
@@ -62,5 +66,5 @@ class WhishListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         return cell
     }
-
+    
 }
