@@ -329,21 +329,34 @@
                             <constraint firstItem="upE-kC-u15" firstAttribute="leading" secondItem="NtB-ra-Mx0" secondAttribute="leading" id="veb-rO-Anb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="Jyd-2u-RMn"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="Jyd-2u-RMn">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="tableView" destination="3b4-Cj-eyZ" id="AO8-r2-O73"/>
+                        <segue destination="N0l-XV-I7Z" kind="presentation" identifier="exploreDetail" modalPresentationStyle="fullScreen" id="lcp-LP-46w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIs-11-xsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2353.6231884057975" y="-724.55357142857144"/>
         </scene>
+        <!--ExploreDetail-->
+        <scene sceneID="mDz-SV-aN3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExploreDetail" id="N0l-XV-I7Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jT6-4H-0do"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkA-EQ-yok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2983" y="-725"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nhE-rv-uTx">
             <objects>
                 <tabBarController id="6fg-Ds-cnG" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ktX-iB-tHK"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2tV-v8-qX5">
+                    <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2tV-v8-qX5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -371,6 +384,9 @@
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="star" width="16" height="16"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

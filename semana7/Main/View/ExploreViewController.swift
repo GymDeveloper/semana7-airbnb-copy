@@ -13,6 +13,13 @@ class ExploreViewController: UIViewController  {
     
     let placeViewModel = PlaceViewModel()
     
+    // MARK: - Varibles de entrada
+    var name: String? = nil
+    var address: String? = nil
+    var rating: String? = nil
+    var useRatingTotal: String? = nil
+    var photo: String? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -70,4 +77,30 @@ extension ExploreViewController:  UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Esta funcion captura el click de cada celda
+        // sender es lo que se envia
+        let object = placeViewModel.arrayResults[indexPath.row]
+        // rellenando variables
+        self.name = object.name
+        self.address = object.address
+        self.photo = object.photo
+        self.rating = String(object.rating)
+        self.useRatingTotal = "(\(object.userRatingsTotal)) Reviews"
+        
+        performSegue(withIdentifier: "exploreDetail", sender: self)
+    }
+    
+    // prepare es un observador de lo segue, este captura cuando se usa el performSegue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "exploreDetail" {
+            if let nextVC = segue.destination as? ExploreDetailViewController {
+                nextVC.name = self.name
+                nextVC.address = self.address
+                nextVC.rating = self.rating
+                nextVC.useRatingTotal = self.useRatingTotal
+                nextVC.photo = self.photo
+            }
+        }
+    }
 }

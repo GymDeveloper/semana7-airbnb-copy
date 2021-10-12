@@ -19,6 +19,9 @@
 		B08EE7692703630600839736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08EE7672703630600839736 /* LaunchScreen.storyboard */; };
 		B08EE771270368D000839736 /* WhishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EE770270368D000839736 /* WhishListViewController.swift */; };
 		B08EE77327037AA100839736 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EE77227037AA000839736 /* InboxViewController.swift */; };
+		B0EDEA742715DD39008F37B7 /* ExploreDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EDEA732715DD39008F37B7 /* ExploreDetail.storyboard */; };
+		B0EDEA762715E0A1008F37B7 /* ExploreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEA752715E0A1008F37B7 /* ExploreDetailViewController.swift */; };
+		B0EDEA782715F2FB008F37B7 /* CheckDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEA772715F2FB008F37B7 /* CheckDateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		B08EE76A2703630600839736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08EE770270368D000839736 /* WhishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhishListViewController.swift; sourceTree = "<group>"; };
 		B08EE77227037AA000839736 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		B0EDEA732715DD39008F37B7 /* ExploreDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreDetail.storyboard; sourceTree = "<group>"; };
+		B0EDEA752715E0A1008F37B7 /* ExploreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailViewController.swift; sourceTree = "<group>"; };
+		B0EDEA772715F2FB008F37B7 /* CheckDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 				B08EE7602703630100839736 /* ViewController.swift */,
 				B08EE77227037AA000839736 /* InboxViewController.swift */,
 				B03A3D3E270CA3C600986C2E /* ExploreViewController.swift */,
+				B0EDEA752715E0A1008F37B7 /* ExploreDetailViewController.swift */,
+				B0EDEA772715F2FB008F37B7 /* CheckDateViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				B08EE7622703630100839736 /* Main.storyboard */,
+				B0EDEA732715DD39008F37B7 /* ExploreDetail.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08EE7692703630600839736 /* LaunchScreen.storyboard in Resources */,
+				B0EDEA742715DD39008F37B7 /* ExploreDetail.storyboard in Resources */,
 				B08EE7662703630600839736 /* Assets.xcassets in Resources */,
 				B08EE7642703630100839736 /* Main.storyboard in Resources */,
 			);
@@ -203,9 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EDEA782715F2FB008F37B7 /* CheckDateViewController.swift in Sources */,
 				B08EE77327037AA100839736 /* InboxViewController.swift in Sources */,
 				B03A3D4B270CAB6D00986C2E /* PlaceViewModel.swift in Sources */,
 				B08EE7612703630100839736 /* ViewController.swift in Sources */,
+				B0EDEA762715E0A1008F37B7 /* ExploreDetailViewController.swift in Sources */,
 				B03A3D3F270CA3C600986C2E /* ExploreViewController.swift in Sources */,
 				B08EE75D2703630100839736 /* AppDelegate.swift in Sources */,
 				B03A3D41270CA3E700986C2E /* ExploreTableViewCell.swift in Sources */,
