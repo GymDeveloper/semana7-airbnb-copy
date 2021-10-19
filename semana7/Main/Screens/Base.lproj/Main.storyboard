@@ -161,7 +161,7 @@
         <!--Profile-->
         <scene sceneID="zPV-PO-nh3">
             <objects>
-                <viewController id="qKj-44-anJ" sceneMemberID="viewController">
+                <viewController id="qKj-44-anJ" customClass="ProfileViewController" customModule="semana7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gqe-Fi-iob">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,13 +172,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq9-3x-OoW">
+                                <rect key="frame" x="172" y="752" width="70" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout">
+                                    <color key="baseBackgroundColor" red="1" green="0.35294117650000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickLogout:" destination="qKj-44-anJ" eventType="touchUpInside" id="Px8-PJ-BXQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KzE-QX-92w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Mad-3L-ZvM" firstAttribute="top" secondItem="KzE-QX-92w" secondAttribute="top" constant="30" id="Cyg-Wk-w6Z"/>
+                            <constraint firstItem="oq9-3x-OoW" firstAttribute="centerX" secondItem="Gqe-Fi-iob" secondAttribute="centerX" id="KZ9-dl-wsP"/>
                             <constraint firstItem="Mad-3L-ZvM" firstAttribute="leading" secondItem="KzE-QX-92w" secondAttribute="leading" constant="20" id="YYN-SZ-hZB"/>
                             <constraint firstItem="KzE-QX-92w" firstAttribute="trailing" secondItem="Mad-3L-ZvM" secondAttribute="trailing" constant="20" id="dWX-CH-QIt"/>
+                            <constraint firstItem="KzE-QX-92w" firstAttribute="bottom" secondItem="oq9-3x-OoW" secondAttribute="bottom" constant="30" id="lD6-Nn-Bjn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="8jS-u7-6JH"/>
