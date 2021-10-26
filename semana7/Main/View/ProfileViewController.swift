@@ -10,10 +10,17 @@ import FirebaseAuth
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var lblEmail: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getUser()
         // Do any additional setup after loading the view.
+    }
+    
+    func getUser() {
+        let user = Auth.auth().currentUser
+        lblEmail.text = user?.email!
     }
     
     @IBAction func onClickLogout(_ sender: Any) {

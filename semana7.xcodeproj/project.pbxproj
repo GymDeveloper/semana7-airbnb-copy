@@ -11,6 +11,7 @@
 		B03A3D41270CA3E700986C2E /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A3D40270CA3E700986C2E /* ExploreTableViewCell.swift */; };
 		B03A3D49270CAA2100986C2E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A3D48270CAA2100986C2E /* Place.swift */; };
 		B03A3D4B270CAB6D00986C2E /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A3D4A270CAB6D00986C2E /* PlaceViewModel.swift */; };
+		B04CA72F27285726002B2427 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CA72E27285726002B2427 /* TripsViewController.swift */; };
 		B057C82F271F1B8900C049E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B057C82E271F1B8900C049E8 /* GoogleService-Info.plist */; };
 		B057C831271F244100C049E8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B057C830271F244100C049E8 /* Login.storyboard */; };
 		B057C833271F278E00C049E8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B057C832271F278E00C049E8 /* LoginViewController.swift */; };
@@ -35,6 +36,7 @@
 		B03A3D40270CA3E700986C2E /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
 		B03A3D48270CAA2100986C2E /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B03A3D4A270CAB6D00986C2E /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		B04CA72E27285726002B2427 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		B057C82E271F1B8900C049E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B057C830271F244100C049E8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B057C832271F278E00C049E8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				B0EDEA772715F2FB008F37B7 /* CheckDateViewController.swift */,
 				B057C832271F278E00C049E8 /* LoginViewController.swift */,
 				B057C834271F2DC800C049E8 /* ProfileViewController.swift */,
+				B04CA72E27285726002B2427 /* TripsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				B08EE7612703630100839736 /* ViewController.swift in Sources */,
 				B0EDEA762715E0A1008F37B7 /* ExploreDetailViewController.swift in Sources */,
 				B03A3D3F270CA3C600986C2E /* ExploreViewController.swift in Sources */,
+				B04CA72F27285726002B2427 /* TripsViewController.swift in Sources */,
 				B08EE75D2703630100839736 /* AppDelegate.swift in Sources */,
 				B03A3D41270CA3E700986C2E /* ExploreTableViewCell.swift in Sources */,
 				B08EE771270368D000839736 /* WhishListViewController.swift in Sources */,
