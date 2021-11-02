@@ -24,6 +24,8 @@
 		B08EE7692703630600839736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08EE7672703630600839736 /* LaunchScreen.storyboard */; };
 		B08EE771270368D000839736 /* WhishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EE770270368D000839736 /* WhishListViewController.swift */; };
 		B08EE77327037AA100839736 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EE77227037AA000839736 /* InboxViewController.swift */; };
+		B0A16EF727319BFB009C24AE /* Wish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16EF627319BFA009C24AE /* Wish.swift */; };
+		B0A16EFA27319FB7009C24AE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A16EF927319FB7009C24AE /* Util.swift */; };
 		B0EDEA742715DD39008F37B7 /* ExploreDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EDEA732715DD39008F37B7 /* ExploreDetail.storyboard */; };
 		B0EDEA762715E0A1008F37B7 /* ExploreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEA752715E0A1008F37B7 /* ExploreDetailViewController.swift */; };
 		B0EDEA782715F2FB008F37B7 /* CheckDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEA772715F2FB008F37B7 /* CheckDateViewController.swift */; };
@@ -51,6 +53,8 @@
 		B08EE76A2703630600839736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08EE770270368D000839736 /* WhishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhishListViewController.swift; sourceTree = "<group>"; };
 		B08EE77227037AA000839736 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		B0A16EF627319BFA009C24AE /* Wish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wish.swift; sourceTree = "<group>"; };
+		B0A16EF927319FB7009C24AE /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		B0EDEA732715DD39008F37B7 /* ExploreDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExploreDetail.storyboard; sourceTree = "<group>"; };
 		B0EDEA752715E0A1008F37B7 /* ExploreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailViewController.swift; sourceTree = "<group>"; };
 		B0EDEA772715F2FB008F37B7 /* CheckDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDateViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		B03A3D42270CA96A00986C2E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B0A16EF827319FA9009C24AE /* Utils */,
 				B03A3D47270CA9A700986C2E /* Screens */,
 				B03A3D46270CA99C00986C2E /* Cell */,
 				B03A3D45270CA98800986C2E /* View */,
@@ -86,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B03A3D48270CAA2100986C2E /* Place.swift */,
+				B0A16EF627319BFA009C24AE /* Wish.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +168,14 @@
 				B08EE76A2703630600839736 /* Info.plist */,
 			);
 			path = semana7;
+			sourceTree = "<group>";
+		};
+		B0A16EF827319FA9009C24AE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B0A16EF927319FB7009C24AE /* Util.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		C4AD94A4C6C9F45A9127C6A8 /* Pods */ = {
@@ -301,6 +315,7 @@
 				B057C833271F278E00C049E8 /* LoginViewController.swift in Sources */,
 				B0EDEA782715F2FB008F37B7 /* CheckDateViewController.swift in Sources */,
 				B08EE77327037AA100839736 /* InboxViewController.swift in Sources */,
+				B0A16EFA27319FB7009C24AE /* Util.swift in Sources */,
 				B03A3D4B270CAB6D00986C2E /* PlaceViewModel.swift in Sources */,
 				B08EE7612703630100839736 /* ViewController.swift in Sources */,
 				B0EDEA762715E0A1008F37B7 /* ExploreDetailViewController.swift in Sources */,
@@ -309,6 +324,7 @@
 				B08EE75D2703630100839736 /* AppDelegate.swift in Sources */,
 				B03A3D41270CA3E700986C2E /* ExploreTableViewCell.swift in Sources */,
 				B08EE771270368D000839736 /* WhishListViewController.swift in Sources */,
+				B0A16EF727319BFB009C24AE /* Wish.swift in Sources */,
 				B057C835271F2DC800C049E8 /* ProfileViewController.swift in Sources */,
 				B08EE75F2703630100839736 /* SceneDelegate.swift in Sources */,
 				B03A3D49270CAA2100986C2E /* Place.swift in Sources */,

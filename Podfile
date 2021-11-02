@@ -8,5 +8,7 @@ target 'semana7' do
   # Pods for semana7
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth' 
+  pod 'Firebase/Firestore'
+  pod 'SkeletonView'
 
 end

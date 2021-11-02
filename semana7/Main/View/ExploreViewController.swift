@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SkeletonView
 
-class ExploreViewController: UIViewController  {
+class ExploreViewController: UIViewController, SkeletonTableViewDataSource  {
         
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,6 +28,12 @@ class ExploreViewController: UIViewController  {
         setUpTable()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        tableView.isSkeletonable = true
+//        tableView.showSkeleton(usingColor: .concrete, transition: .crossDissolve(0.25))
+    }
+    
     func setUpTable() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -39,6 +46,8 @@ class ExploreViewController: UIViewController  {
     func bind() {
         placeViewModel.refreshData = { [weak self] () in
             DispatchQueue.main.async {
+//                self?.tableView.stopSkeletonAnimation()
+//                self?.view.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
                 self?.tableView.reloadData()
             }
         }
@@ -47,8 +56,17 @@ class ExploreViewController: UIViewController  {
 
 extension ExploreViewController:  UITableViewDelegate, UITableViewDataSource {
     
+    
+    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return placeViewModel.arrayResults.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return placeViewModel.arrayResults.count
+    }
+    
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+       return "cellExplore"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,13 +80,7 @@ extension ExploreViewController:  UITableViewDelegate, UITableViewDataSource {
         cell.lblRating.text = String(object.rating)
         cell.lblCountRating.text = "(\(object.userRatingsTotal))"
         
-        let urlImage = URL(string: object.photo)
-    
-        let data = try? Data(contentsOf: urlImage!)
-        
-        if let imageData = data {
-            cell.exploreImage?.image = UIImage(data: imageData)
-        }
+        setUpImage(photo: object.photo, image: cell.exploreImage)
         
         let cellView = UIView()
         cellView.backgroundColor = UIColor.systemBackground
@@ -103,4 +115,5 @@ extension ExploreViewController:  UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
+    
 }

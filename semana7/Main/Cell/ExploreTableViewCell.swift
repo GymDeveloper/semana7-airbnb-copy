@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class ExploreTableViewCell: UITableViewCell {
 
@@ -23,6 +24,7 @@ class ExploreTableViewCell: UITableViewCell {
         super.awakeFromNib()
         exploreImage.layer.cornerRadius = 12
         exploreImage.layer.masksToBounds = true
+        exploreImage.isSkeletonable = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -165,6 +165,17 @@
                                     <constraint firstItem="Uxw-46-OUa" firstAttribute="leading" secondItem="IWs-Dc-GUb" secondAttribute="leading" constant="20" id="w0f-TR-Bo5"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe7-Yl-Drf">
+                                <rect key="frame" x="293.5" y="64" width="100.5" height="31"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.015686274510000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="heart.fill" catalog="system" title=" Guardar">
+                                    <color key="baseBackgroundColor" red="0.84313725490000002" green="0.015686274510000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSaveWhish:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GiT-8n-Jy3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -191,6 +202,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yrA-zU-oZZ" secondAttribute="trailing" constant="20" id="T2k-ty-qIv"/>
                             <constraint firstItem="zdP-EV-A2q" firstAttribute="top" secondItem="6En-2D-pdU" secondAttribute="bottom" constant="11" id="T2o-Wq-D6q"/>
                             <constraint firstItem="3gF-xy-tJO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="THt-zu-5Tk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oe7-Yl-Drf" secondAttribute="trailing" constant="20" id="Vd8-xN-ln1"/>
                             <constraint firstItem="ZmU-eh-Rsc" firstAttribute="leading" secondItem="G50-gO-GXT" secondAttribute="trailing" constant="5" id="WrY-nE-S52"/>
                             <constraint firstItem="PgI-C4-UaE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="WsH-Py-fQ5"/>
                             <constraint firstItem="tv7-IW-u2u" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="XHC-T6-nE6"/>
@@ -204,6 +216,7 @@
                             <constraint firstItem="dan-o4-gTh" firstAttribute="top" secondItem="ZmU-eh-Rsc" secondAttribute="bottom" constant="10" id="j4V-Qw-FQQ"/>
                             <constraint firstItem="3gF-xy-tJO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ktm-ni-2S2"/>
                             <constraint firstItem="3gF-xy-tJO" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lbc-4A-g4N"/>
+                            <constraint firstItem="oe7-Yl-Drf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="pi0-MY-y7g"/>
                             <constraint firstItem="zdP-EV-A2q" firstAttribute="leading" secondItem="PgI-C4-UaE" secondAttribute="trailing" constant="7" id="q4p-qV-rOp"/>
                             <constraint firstItem="G50-gO-GXT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="rcN-7D-B21"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kZV-49-bGv" secondAttribute="trailing" constant="20" id="sa6-NZ-rqW"/>
@@ -325,6 +338,7 @@
         <image name="back" width="64" height="64"/>
         <image name="bridge" width="500" height="333.5"/>
         <image name="cancel" width="32" height="32"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <image name="message.and.waveform" catalog="system" width="128" height="111"/>
         <image name="star" width="16" height="16"/>
