@@ -166,8 +166,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq9-3x-OoW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq9-3x-OoW">
                                 <rect key="frame" x="172" y="752" width="70" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Logout">
                                     <color key="baseBackgroundColor" red="1" green="0.35294117650000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -176,15 +177,35 @@
                                     <action selector="onClickLogout:" destination="qKj-44-anJ" eventType="touchUpInside" id="Px8-PJ-BXQ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bart" translatesAutoresizingMaskIntoConstraints="NO" id="iub-Js-TuF">
-                                <rect key="frame" x="20" y="69" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bart" translatesAutoresizingMaskIntoConstraints="NO" id="iub-Js-TuF">
+                                <rect key="frame" x="20" y="108" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="OlY-H6-uZg"/>
-                                    <constraint firstAttribute="height" constant="100" id="T4G-TA-qte"/>
+                                    <constraint firstAttribute="height" constant="70" id="TOi-pv-cwP"/>
+                                    <constraint firstAttribute="width" constant="70" id="V40-Zv-oSb"/>
                                 </constraints>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAk-VJ-smn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem id="NNh-dT-g8T">
+                                        <barButtonItem key="rightBarButtonItem" title="Edit" id="CAd-cA-Gah">
+                                            <color key="tintColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="9gR-8K-9rp" kind="show" id="LXB-Mp-O8I"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGM-T3-pKU">
+                                <rect key="frame" x="98" y="140" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXh-fz-aHm">
-                                <rect key="frame" x="130" y="69" width="264" height="24"/>
+                                <rect key="frame" x="98" y="108" width="296" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -193,23 +214,39 @@
                         <viewLayoutGuide key="safeArea" id="KzE-QX-92w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iub-Js-TuF" firstAttribute="leading" secondItem="KzE-QX-92w" secondAttribute="leading" constant="20" id="9FZ-sJ-PcF"/>
-                            <constraint firstItem="oq9-3x-OoW" firstAttribute="centerX" secondItem="Gqe-Fi-iob" secondAttribute="centerX" id="KZ9-dl-wsP"/>
-                            <constraint firstItem="iub-Js-TuF" firstAttribute="top" secondItem="KzE-QX-92w" secondAttribute="top" constant="25" id="Q2D-bo-Vaz"/>
-                            <constraint firstItem="PXh-fz-aHm" firstAttribute="top" secondItem="KzE-QX-92w" secondAttribute="top" constant="25" id="b2p-My-dd8"/>
-                            <constraint firstItem="KzE-QX-92w" firstAttribute="bottom" secondItem="oq9-3x-OoW" secondAttribute="bottom" constant="30" id="lD6-Nn-Bjn"/>
-                            <constraint firstItem="KzE-QX-92w" firstAttribute="trailing" secondItem="PXh-fz-aHm" secondAttribute="trailing" constant="20" id="v23-x6-tKe"/>
-                            <constraint firstItem="PXh-fz-aHm" firstAttribute="leading" secondItem="iub-Js-TuF" secondAttribute="trailing" constant="10" id="yLM-0I-Osk"/>
+                            <constraint firstItem="nAk-VJ-smn" firstAttribute="leading" secondItem="KzE-QX-92w" secondAttribute="leading" id="3dA-Fy-RXu"/>
+                            <constraint firstItem="iub-Js-TuF" firstAttribute="top" secondItem="nAk-VJ-smn" secondAttribute="bottom" constant="20" id="CfC-Qx-gf0"/>
+                            <constraint firstItem="PXh-fz-aHm" firstAttribute="top" secondItem="nAk-VJ-smn" secondAttribute="bottom" constant="20" id="Elc-yi-THQ"/>
+                            <constraint firstItem="KzE-QX-92w" firstAttribute="trailing" secondItem="bGM-T3-pKU" secondAttribute="trailing" constant="20" id="H5p-To-Vjb"/>
+                            <constraint firstItem="KzE-QX-92w" firstAttribute="trailing" secondItem="PXh-fz-aHm" secondAttribute="trailing" constant="20" id="JSw-eu-nAu"/>
+                            <constraint firstItem="iub-Js-TuF" firstAttribute="leading" secondItem="KzE-QX-92w" secondAttribute="leading" constant="20" id="MQ6-iV-D5D"/>
+                            <constraint firstItem="PXh-fz-aHm" firstAttribute="leading" secondItem="iub-Js-TuF" secondAttribute="trailing" constant="8" symbolic="YES" id="QCI-R9-X0m"/>
+                            <constraint firstItem="nAk-VJ-smn" firstAttribute="trailing" secondItem="KzE-QX-92w" secondAttribute="trailing" id="TNo-fg-Tuh"/>
+                            <constraint firstItem="nAk-VJ-smn" firstAttribute="top" secondItem="KzE-QX-92w" secondAttribute="top" id="aHf-3d-qV9"/>
+                            <constraint firstItem="bGM-T3-pKU" firstAttribute="leading" secondItem="iub-Js-TuF" secondAttribute="trailing" constant="8" symbolic="YES" id="hls-v1-Pyq"/>
+                            <constraint firstItem="bGM-T3-pKU" firstAttribute="top" secondItem="PXh-fz-aHm" secondAttribute="bottom" constant="8" symbolic="YES" id="lZN-bl-ajY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="8jS-u7-6JH"/>
                     <connections>
-                        <outlet property="lblEmail" destination="PXh-fz-aHm" id="6F4-yb-RFD"/>
+                        <outlet property="imageProfile" destination="iub-Js-TuF" id="YMi-kR-nyP"/>
+                        <outlet property="lblEmail" destination="bGM-T3-pKU" id="pkS-Uf-Om4"/>
+                        <outlet property="lblName" destination="PXh-fz-aHm" id="9Vk-g7-BeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWh-yu-U08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="485.50724637681162" y="910.71428571428567"/>
+            <point key="canvasLocation" x="-25" y="911"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="EU7-MD-hHZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="9gR-8K-9rp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7WW-o3-ckf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6U4-j7-4ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="911"/>
         </scene>
         <!--Trips-->
         <scene sceneID="nW7-aq-3Jy">

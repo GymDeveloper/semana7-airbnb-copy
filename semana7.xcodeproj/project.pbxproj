@@ -11,6 +11,8 @@
 		B03A3D41270CA3E700986C2E /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A3D40270CA3E700986C2E /* ExploreTableViewCell.swift */; };
 		B03A3D49270CAA2100986C2E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A3D48270CAA2100986C2E /* Place.swift */; };
 		B03A3D4B270CAB6D00986C2E /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A3D4A270CAB6D00986C2E /* PlaceViewModel.swift */; };
+		B046ECFA273AC6FE00F741FB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B046ECF9273AC6FE00F741FB /* Profile.storyboard */; };
+		B046ECFC273ACAF200F741FB /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046ECFB273ACAF200F741FB /* EditProfileViewController.swift */; };
 		B04CA72F27285726002B2427 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CA72E27285726002B2427 /* TripsViewController.swift */; };
 		B057C82F271F1B8900C049E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B057C82E271F1B8900C049E8 /* GoogleService-Info.plist */; };
 		B057C831271F244100C049E8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B057C830271F244100C049E8 /* Login.storyboard */; };
@@ -38,6 +40,8 @@
 		B03A3D40270CA3E700986C2E /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
 		B03A3D48270CAA2100986C2E /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B03A3D4A270CAB6D00986C2E /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		B046ECF9273AC6FE00F741FB /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B046ECFB273ACAF200F741FB /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		B04CA72E27285726002B2427 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		B057C82E271F1B8900C049E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B057C830271F244100C049E8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				B057C832271F278E00C049E8 /* LoginViewController.swift */,
 				B057C834271F2DC800C049E8 /* ProfileViewController.swift */,
 				B04CA72E27285726002B2427 /* TripsViewController.swift */,
+				B046ECFB273ACAF200F741FB /* EditProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 				B08EE7622703630100839736 /* Main.storyboard */,
 				B0EDEA732715DD39008F37B7 /* ExploreDetail.storyboard */,
 				B057C830271F244100C049E8 /* Login.storyboard */,
+				B046ECF9273AC6FE00F741FB /* Profile.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 				B057C831271F244100C049E8 /* Login.storyboard in Resources */,
 				B08EE7662703630600839736 /* Assets.xcassets in Resources */,
 				B057C82F271F1B8900C049E8 /* GoogleService-Info.plist in Resources */,
+				B046ECFA273AC6FE00F741FB /* Profile.storyboard in Resources */,
 				B08EE7642703630100839736 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +329,7 @@
 				B03A3D3F270CA3C600986C2E /* ExploreViewController.swift in Sources */,
 				B04CA72F27285726002B2427 /* TripsViewController.swift in Sources */,
 				B08EE75D2703630100839736 /* AppDelegate.swift in Sources */,
+				B046ECFC273ACAF200F741FB /* EditProfileViewController.swift in Sources */,
 				B03A3D41270CA3E700986C2E /* ExploreTableViewCell.swift in Sources */,
 				B08EE771270368D000839736 /* WhishListViewController.swift in Sources */,
 				B0A16EF727319BFB009C24AE /* Wish.swift in Sources */,

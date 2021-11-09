@@ -14,7 +14,11 @@ extension UIViewController {
     func setUpImage(photo: String, image: UIImageView) {
         let urlImage = URL(string: photo)
         
-        let imageData = try? Data(contentsOf: urlImage!)
+        setImageURl(url: urlImage!, image: image)
+    }
+    
+    func setImageURl(url: URL, image: UIImageView) {
+        let imageData = try? Data(contentsOf: url)
         
         if let data = imageData {
             image.image = UIImage(data: data)
